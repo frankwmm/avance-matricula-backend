@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 define('LARAVEL_START', microtime(true));
 
 
-header('Access-Control-Allow-Origin: https://avance-matricula-frontend.herokuapp.com/api/');
-header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
-header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token');
+header('Access-Control-Allow-Origin:  *');
+header('Access-Control-Allow-Methods:  POST, GET, OPTIONS, PUT, PATCH, DELETE');
+header('Access-Control-Allow-Headers: Accept, Content-Type, X-Auth-Token, Origin, Authorization');
 /*
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
