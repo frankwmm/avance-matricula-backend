@@ -17,7 +17,7 @@ class Cors
     public function handle(Request $request, Closure $next)
     {
         return $next($request)
-        ->header("Access-Controll-Allow-Origin", "https://avance-matricula-frontend.herokuapp.com/")
+        ->header("Access-Controll-Allow-Origin", "https://avance-matricula-frontend.herokuapp.com/api")
         ->header("Access-Controll-Allow-Methods", "GET, POST, PUT, DELETE, PATCH, OPTIONS")
         ->header("Access-Controll-Allow-Headers", "Content-type, Authorization");
 
